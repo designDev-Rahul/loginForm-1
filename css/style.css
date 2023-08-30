@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:root {
+    --darkPink: #b6068f;
+    --lightPink: #de23bf;
+    --lightGreen: #14ddbb;
+    --primaryWhite: #fff;
+    --transparentWhite: #ffffff47;
+}
+
+
+.btn {
+    background: var(--primaryWhite) !important;
+    border: none;
+    padding: 8px 80px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: var(--darkPink) !important;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.formArea {
+    max-width: 1200px;
+    margin: 80px auto;
+    background: #f3f3f3;
+    border-radius: 20px;
+    padding: 60px 0;
+}
+
+.formArea .outerBox {
+    width: 34%;
+    background: var(--darkPink);
+    margin: 0 auto;
+    padding: 80px 0 80px 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.formArea .outerBox::before,
+.formArea .outerBox::after {
+    content: '';
+    position: absolute;
+    background: var(--primaryWhite);
+    border-radius: 50%;
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.6);
+}
+
+.formArea .outerBox::before {
+    width: 330px;
+    height: 330px;
+    top: -100px;
+    left: -40px;
+}
+
+.formArea .outerBox::after {
+    width: 230px;
+    height: 230px;
+    bottom: -40px;
+    right: -30px;
+}
+
+.formArea .outerBox .innerBox {
+    background: linear-gradient(to bottom left, #14ddbbdb, #de23bfdb);
+    padding: 60px 30px;
+    border-radius: 16px 0 0 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    position: relative;
+    z-index: 1;
+}
+
+.formArea .outerBox .innerBox h1 {
+    font-weight: 300;
+    color: var(--primaryWhite);
+    margin-bottom: 46px;
+}
+
+.formArea .outerBox .innerBox .form-label {
+    color: var(--primaryWhite);
+    margin-bottom: 4px;
+}
+
+.formArea .outerBox .innerBox .form-control {
+    border: none;
+    border-radius: 4px;
+    background: var(--transparentWhite);
+    color: var(--primaryWhite);
+    margin-bottom: 20px;
+}
+
+.formArea .outerBox .innerBox .form-control:focus {
+    box-shadow: none;
+}
+
+.formArea .outerBox .innerBox span {
+    color: var(--primaryWhite);
+    cursor: pointer;
+}
+
+.formArea .outerBox .innerBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.formArea .outerBox .innerBox ul li a {
+    background: var(--transparentWhite);
+    color: var(--primaryWhite);
+    border: 1px solid var(--primaryWhite);
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.formArea .outerBox .innerBox ul li a:hover {
+    transform: scale(1.1);
+}
+
+.formArea .outerBox .innerBox .btnArea {
+    text-align: center;
+    position: relative;
+    margin-bottom: -82px;
+}
